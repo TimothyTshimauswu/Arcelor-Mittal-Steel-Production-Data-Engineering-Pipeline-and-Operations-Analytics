@@ -13,16 +13,14 @@
 A full-scale data engineering and analytics pipeline built to diagnose throughput losses, equipment bottlenecks, downtime patterns, and shift-related delays in a steel hot rolling temper line.  
 The system reconstructs coil cycle behaviour, integrates production and maintenance data, and delivers BI insights that support higher throughput, reduced downtime, and better operational planning.
 </p>
-# Steel Hot Rolling Plant Data Engineering Pipeline with Coil Cycle Modelling and Operations Analytics
-
 ---
 
 ## Executive Summary
 
-This project started after the closure of ArcelorMittal’s Saldanha Works plant.  
-All thin flat products previously produced at Saldanha were moved to Vanderbijlpark, increasing monthly production targets by about 30 percent. The temper line I supported became the final step before dispatch, yet it had no historical data for these products and was not designed to handle them.
+As I was working as a Process Engineer at Arcelor Mittal, this project started after the closure of ArcelorMittal’s Saldanha Works plant.  
+All thin flat products previously produced at Saldanha were moved to Vanderbijlpark, increasing monthly production targets by about 30%. The temper line I supported was the final step before dispatch, yet it lacked historical data for these products and was not designed to handle them.
 
-Management needed answers about falling tempo, delays between shifts, frequent breakdowns, and inconsistent throughput. None of this could be explained by operator feedback alone. There was no equipment-level operational dataset to show what was slowing down the line.
+Management needed answers about falling tempo, shift-to-shift delays, frequent breakdowns, and inconsistent throughput. None of this could be explained by operator feedback alone. There was no equipment-level operational dataset to show what was slowing down the line.
 
 To address this, I built a complete data engineering and analytics pipeline:  
 I extracted equipment activity from Level-1 encoders, pulled production data from Azure Data Factory, ingested maintenance logs, merged the datasets, modelled the coil cycle using Python, and built a BI dashboard that revealed bottlenecks, delays, maintenance problems, and shift-related issues.  
@@ -34,11 +32,11 @@ The result became the primary weekly performance tool for production, maintenanc
 
 Redirecting thin flat products to a line not designed for them created instability across the process. Leadership needed a data-driven view of:
 
-1. Why monthly production targets were not being met  
+1. Why were monthly production targets not being met  
 2. Why shift transitions caused large production losses  
 3. Which equipment was the true bottleneck  
 4. How mechanical failures and downtime were impacting tempo  
-5. How product mix affected coil cycle time  
+5. How the product mix affected the coil cycle time  
 6. How scrap-versus-prime splits affected flow  
 7. How to increase throughput without major capital investment  
 
@@ -97,7 +95,7 @@ Because the line had no equipment-level time tracking for thin coils, I built a 
 The model produced:
 
 - Per-equipment operation durations  
-- Realistic run windows  
+- Realistic run Windows  
 - Queue and idle behaviour  
 - Complete end-to-end cycle times  
 
