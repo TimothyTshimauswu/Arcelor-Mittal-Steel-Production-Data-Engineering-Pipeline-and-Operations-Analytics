@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/project_banner.png" width="100%" alt="Steel Hot Rolling Plant Data Engineering Pipeline with Coil Cycle Modelling and Operations Analytics Banner">
+  <img src="assets/project_banner.png" width="100%" alt="Arcelor Mittal Steel Production Data Engineering Pipeline and Operations Analytics Banner">
 </p>
 
-<h1 align="center">Steel Hot Rolling Plant Data Engineering Pipeline with Coil Cycle Modelling and Operations Analytics</h1>
+<h1 align="center">Arcelor Mittal Steel Production Data Engineering Pipeline and Operations Analytics</h1>
 
 <p align="center">
   <strong>Python • Pandas • NumPy • SQL (MySQL) • ETL Pipelines • Feature Engineering • Time-Series Modelling • Industrial Analytics • Maintenance Analytics • Process Engineering • Power BI • Manufacturing KPIs</strong>
